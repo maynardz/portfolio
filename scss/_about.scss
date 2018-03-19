@@ -3,10 +3,11 @@
 About Section
 ****************************/
 #about {
-    // background: $blue-green;
-    background: url('../assets/logo/blue-green-bg.jpg') no-repeat center center;
-    font-size: 18px;
-
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: left;
+    background-color: whitesmoke;
 }
 
 .about-panel {
@@ -14,4 +15,35 @@ About Section
     -webkit-animation-delay: 0.1s; 
     -moz-animation-delay: 0.1s; 
     animation-delay: 0.1s;
+}
+
+.image {
+    height: 478px;
+    width: 350px;;
+    margin-bottom: 5.5em;
+    margin-left: -7em;
+    border: 5px solid black;
+    padding: 3px;   
+}
+
+.section-title {
+    text-align: center;
+}
+
+.lead {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+h4 {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 25px;
+}
+
+.progress {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+p, .lead {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 19.3px;
 }

@@ -1,29 +1,20 @@
-/* CSS code for the Contact section. */
+
+.col-md-3 {
+    margin-top: 2.2em;
+}
+
+.form-group {
+    margin-top: 2em;
+}
 
 #contact {
-    margin: 50px;
-}
-  
-#contact .social-links ul {
-    list-style: none;
+    margin: 0px;
+    background-color: #333;
+    background: linear-gradient(110deg, #333, grey);
+    color: whitesmoke;
 }
 
-#contact .social-links a {
-    font-size: 18px;
-    display: inline-block;
-    background: $gray;
-    color: #fff;
-    line-height: 1;
-    padding: 12px 0;
-    border-radius: 50%;
-    text-align: center;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
-}
-  
-#contact .social-links a:hover {
-    background: $green;
-    color: #fff;
+#success {
+    color: #333;
 }
   

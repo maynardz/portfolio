@@ -2,8 +2,11 @@
 Portfolio Section
 --------------------------------*/
 #portfolio {
-    background: #fff;
-    padding: 80px 0;
+    background:#333;
+    background: linear-gradient(110deg, #333, grey);
+    padding: 12px 0;
+    color: whitesmoke;
+    text-align: center;
 }
   
 #portfolio .portfolio-item {
@@ -15,60 +18,63 @@ Portfolio Section
   width: 100%;
   display: table;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+}
+
+.section-title {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    margin-left: -0.3em;
+    font-size: 40px;
+}
+
+.col-md-3 {
+    margin-left: 5.2em;
+    border-radius: 50%;
 }
   
 #portfolio .portfolio-item .details {
     height: 260px;
-    background: #fff;
+    background: #333;
     display: table-cell;
     vertical-align: middle;
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.8s;
     text-align: center;
 }
   
 #portfolio .portfolio-item .details h4 {
-    font-size: 25px;
+    font-size: 30px;
     transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
     transform: translate3d(0, -15px, 0);
     font-weight: 700;
-    color: #000;
-}
-  
-#portfolio .portfolio-item .details span {
-    display: block;
-    color: $gray;
-    font-size: 18px;
-    transition: opacity 0.3s, -webkit-transform 0.3s;
-    transition: transform 0.3s, opacity 0.3s;
-    transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-    -webkit-transform: translate3d(0, 15px, 0);
-    transform: translate3d(0, 15px, 0);
+    color: whitesmoke;
+    margin-top: 1.3em;
 }
   
 #portfolio .portfolio-item:hover .details {
-    opacity: 0.6;
+    opacity: 0.8;
 }
   
-#portfolio .portfolio-item:hover .details h4 {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
-  
-  #portfolio .portfolio-item:hover .details span {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  
-  .image-link {
-    cursor: -webkit-zoom-in;
-    cursor: -moz-zoom-in;
-    cursor: zoom-in;
-  }
-  
-  /* aligns caption to center */
   .mfp-title {
     text-align: center;
     padding: 5px 5px;
   }
+
+#myCarousel {
+    margin-top: 2em;
+    object-fit: cover;
+    margin-left: 20em;
+    margin-right: 20em;
+}
+
+.sub-header {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    margin-top: 11em;
+    margin-right: 0em;
+    font-size: 35px;
+}
+
+
+
+

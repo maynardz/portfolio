@@ -2,17 +2,15 @@
 Navbar Section
 --------------------------------*/
 #main-nav {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: none;
-    background: transparent;
+    padding-top: 0em;
+    padding-bottom: 0rem;
 
-    &:hover {
-        background: transparent;
-    }
+    // &:hover {
+        // background: transparent;
+    // }
 
     .icon-bar {
-        width: 22px;
+      width: 22px;
       left: 3px;
       transition: all 2.2s;
       position: relative;

@@ -1,16 +1,73 @@
-/* CSS code for the Header section. */
+.jumbotron.jumbotron-main {
+    height: 100%;
+    width: 100%;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    color: #333;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    margin: 0;
+}
+
 .jumbotron {
-    background: url('http://eleven50.wpengine.com/wp-content/uploads/2017/03/Learning-to-Code5.png?id=21797') no-repeat center center;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #333;
 }
 
-.jumbotron-heading {
-    padding-top: 50px;
-    font-weight: 400;
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background: #333;
 }
 
-.jumbotron .container {
-    max-width: 60rem;
+canvas {
+    display: inline-block;
+    vertical-align: baseline;
+    // background: linear-gradient(280deg, rgb(167, 194, 197), rgb(255, 255, 255));
 }
-  
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1 {
+    display: block;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-top: 5.5em;
+    margin-bottom: 0;
+    margin-left: 0em;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+.jumbotron p {
+    margin-bottom: 475px;
+    font-size: 23px;
+    font-weight: 200;
+    margin-left: 0em;
+}
+
+
+#nokey {
+    box-sizing: border-box;
+    height: 75%;
+    margin: 0;
+    padding: 0em;
+    background-color: whitesmoke;
+    overflow: hidden;
+    z-index: -1;
+}
+
+hr {
+    border-color: #333;
+}
