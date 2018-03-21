@@ -51,10 +51,11 @@ h1 {
 }
 
 .jumbotron p {
-    margin-bottom: 475px;
+    margin-bottom: 455px;
     font-size: 23px;
     font-weight: 200;
     margin-left: 0em;
+    margin-top: .5em;
 }
 
 
@@ -71,3 +72,38 @@ h1 {
 hr {
     border-color: #333;
 }
+
+// /* For devices which are smaller than 960 pixels */
+// @media only screen and (max-width: 959px) {
+//     #particles-js {
+//         margin: auto;
+//     }
+//  }
+ 
+//  /* For Tablets */
+//  @media only screen and (min-width: 768px) and (max-width: 959px) {
+//     #particles-js {
+//         margin: auto;
+//     }
+//  }
+ 
+//  /* For all mobiles */
+//  @media only screen and (max-width: 767px) {
+//     #particles-js {
+//         margin: auto;
+//     }
+//  }
+ 
+//  /* Mobile Landscape Size to Tablet Portrait  */
+//  @media only screen and (min-width: 480px) and (max-width: 767px) {
+//     #particles-js {
+//         margin: auto;
+//     }
+//  }
+ 
+//  /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+//  @media only screen and (max-width: 479px) {
+//     #particles-js {
+//         margin: auto;
+//     }
+//  }

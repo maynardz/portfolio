@@ -93,10 +93,11 @@ h1 {
   font-family: 'IBM Plex Sans Condensed', sans-serif; }
 
 .jumbotron p {
-  margin-bottom: 475px;
+  margin-bottom: 455px;
   font-size: 23px;
   font-weight: 200;
-  margin-left: 0em; }
+  margin-left: 0em;
+  margin-top: .5em; }
 
 #nokey {
   box-sizing: border-box;
@@ -116,7 +117,7 @@ Portfolio Section
 #portfolio {
   background: #333;
   background: linear-gradient(110deg, #333, grey);
-  padding: 12px 0;
+  padding: 50px;
   color: whitesmoke;
   text-align: center; }
 
@@ -129,17 +130,12 @@ Portfolio Section
   width: 100%;
   display: table;
   overflow: hidden;
-  margin-bottom: 50px;
-  border-radius: 50%; }
+  margin-bottom: 1em; }
 
 .section-title {
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   margin-left: -0.3em;
   font-size: 40px; }
-
-.col-md-3 {
-  margin-left: 5.2em;
-  border-radius: 50%; }
 
 #portfolio .portfolio-item .details {
   height: 260px;
@@ -155,8 +151,7 @@ Portfolio Section
   transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
   transform: translate3d(0, -15px, 0);
   font-weight: 700;
-  color: whitesmoke;
-  margin-top: 1.3em; }
+  color: whitesmoke; }
 
 #portfolio .portfolio-item:hover .details {
   opacity: 0.8; }
@@ -166,16 +161,39 @@ Portfolio Section
   padding: 5px 5px; }
 
 #myCarousel {
-  margin-top: 2em;
   object-fit: cover;
   margin-left: 20em;
   margin-right: 20em; }
 
 .sub-header {
   font-family: 'IBM Plex Sans Condensed', sans-serif;
-  margin-top: 11em;
   margin-right: 0em;
   font-size: 35px; }
+
+/* For devices which are smaller than 960 pixels */
+@media only screen and (max-width: 959px) {
+  #myCarousel {
+    margin: auto; } }
+
+/* For Tablets */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  #myCarousel {
+    margin: auto; } }
+
+/* For all mobiles */
+@media only screen and (max-width: 767px) {
+  #myCarousel {
+    margin: auto; } }
+
+/* Mobile Landscape Size to Tablet Portrait  */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #myCarousel {
+    margin: auto; } }
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  #myCarousel {
+    margin: auto; } }
 
 /****************************
 About Section
@@ -185,7 +203,8 @@ About Section
   background-size: cover;
   background-repeat: no-repeat;
   text-align: left;
-  background-color: whitesmoke; }
+  background-color: whitesmoke;
+  padding: 50px; }
 
 .about-panel {
   visibility: visible;
@@ -194,10 +213,10 @@ About Section
   animation-delay: 0.1s; }
 
 .image {
-  height: 478px;
-  width: 350px;
+  height: 34em;
+  width: 25em;
   margin-bottom: 5.5em;
-  margin-left: -7em;
+  margin-left: -8em;
   border: 5px solid black;
   padding: 3px; }
 
@@ -217,6 +236,31 @@ h4 {
 p, .lead {
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-size: 19.3px; }
+
+/* For devices which are smaller than 960 pixels */
+@media only screen and (max-width: 959px) {
+  .container2 .progress {
+    margin: auto; } }
+
+/* For Tablets */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .container2 .progress {
+    margin: auto; } }
+
+/* For all mobiles */
+@media only screen and (max-width: 767px) {
+  .container2 .progress {
+    margin: auto; } }
+
+/* Mobile Landscape Size to Tablet Portrait  */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container2 .progress {
+    margin: auto; } }
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  .container2 .progress {
+    margin: auto; } }
 
 .col-md-3 {
   margin-top: 2.2em; }

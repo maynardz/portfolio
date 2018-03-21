@@ -8,6 +8,7 @@ About Section
     background-repeat: no-repeat;
     text-align: left;
     background-color: whitesmoke;
+    padding: 50px;
 }
 
 .about-panel {
@@ -18,10 +19,10 @@ About Section
 }
 
 .image {
-    height: 478px;
-    width: 350px;;
+    height: 34em;
+    width: 25em;
     margin-bottom: 5.5em;
-    margin-left: -7em;
+    margin-left: -8em;
     border: 5px solid black;
     padding: 3px;   
 }
@@ -47,3 +48,38 @@ p, .lead {
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     font-size: 19.3px;
 }
+
+/* For devices which are smaller than 960 pixels */
+@media only screen and (max-width: 959px) {
+    .container2 .progress {
+        margin: auto;
+    }
+ }
+ 
+ /* For Tablets */
+ @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container2 .progress {
+        margin: auto;
+    }
+ }
+ 
+ /* For all mobiles */
+ @media only screen and (max-width: 767px) {
+    .container2 .progress {
+        margin: auto;
+    }
+ }
+ 
+ /* Mobile Landscape Size to Tablet Portrait  */
+ @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container2 .progress {
+        margin: auto;
+    }
+ }
+ 
+ /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+ @media only screen and (max-width: 479px) {
+    .container2 .progress {
+        margin: auto;
+    }
+ }
