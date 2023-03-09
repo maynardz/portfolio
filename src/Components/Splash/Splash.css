@@ -1,0 +1,93 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-size: 4px 4px;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  -moz-backdrop-filter: blur(3px);
+  font-size: 14px;
+  line-height: 14px;
+}
+
+footer::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: whitesmoke;
+  opacity: 0.6;
+}
+
+footer svg {
+  margin-right: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background: red;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: red;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  scroll-snap-align: center;
+  perspective: 500px;
+  line-height: 1.2;
+}
+
+/* section > div {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  max-height: 90vh;
+  margin: 20px;
+  background: aquamarine;
+  overflow: hidden;
+} */
+
+.light {
+  background-color: #222;
+}
+
+.dark {
+  background-color: whitesmoke;
+}
+
+.nextui-c-itiWTf-bDUxer-checked-true {
+  background: whitesmoke !important;
+}
+
+footer button {
+  border: none;
+  /* background-color: #01ffff; */
+  padding: 0.5em;
+  border-radius: 2.5px;
+}

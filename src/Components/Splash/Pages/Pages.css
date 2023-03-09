@@ -1,0 +1,63 @@
+span {
+  display: inline-block;
+}
+
+.animate {
+  letter-spacing: 10px;
+}
+
+h2 {
+  margin: 0;
+  color: whitesmoke;
+  left: calc(90% + 100px);
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: -3px;
+  line-height: 1.2;
+  position: absolute;
+  font-family: midorima;
+}
+
+/* ABOUT */
+#about_container {
+  text-align: center;
+  height: 100vh;
+  width: 85vw;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: whitesmoke;
+  color: #222;
+}
+
+/* DEV */
+#dev_container {
+  text-align: center;
+  height: 100vh;
+  width: 85vw;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #222;
+  color: #fff;
+}
+
+/* GRAPHIC DESIGN */
+#graphicDesign_container {
+  text-align: center;
+  height: 100vh;
+  width: 85vw;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #222;
+  color: #fff;
+}
+
+/* PHOTOGRAPHY */
+#photography_container {
+  text-align: center;
+  height: 100vh;
+  width: 85vw;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #222;
+  color: #fff;
+}
