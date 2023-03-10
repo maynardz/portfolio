@@ -3,31 +3,6 @@ body {
 }
 
 @font-face {
-  font-family: akira;
-  src: url('./assets/fonts/N-Gage.ttf');
-}
-
-@font-face {
-  font-family: midorima;
-  src: url('./assets/fonts/Midorima.ttf');
-}
-
-@font-face {
-  font-family: ttsmalls;
-  src: url('./assets/fonts/TTSmalls.otf');
-}
-
-@font-face {
-  font-family: hira;
-  src: url('./assets/fonts/hiragana.ttf');
-}
-
-@font-face {
-  font-family: kata;
-  src: url('./assets/fonts/katakana.ttf');
-}
-
-@font-face {
   font-family: rejova;
   src: url('./assets/fonts/Rejova.ttf');
 }

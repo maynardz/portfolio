@@ -59,7 +59,7 @@ const Landing = props => {
   }, [targets]);
 
   return (
-    <div style={{marginLeft: '0.6em'}}>
+    <div style={{marginLeft: '0.5em'}}>
       <div ref={ref}>
         <div className="animate">
             ZSM.DEV
