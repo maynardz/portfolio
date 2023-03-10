@@ -1,6 +1,39 @@
+.dev_heading {
+  position: absolute;
+  top: 0;
+  left: 12.5%;
+  font-size: 3rem;
+}
+
 .parallax_container {
   top: 0;
   left: 0;
+}
+
+.parallax_brand_image {
+  height: 200px;
+  width: auto;
+  margin-left: 0.25em;
+}
+
+.parallax_dev_info {
+  font-size: 1.4rem;
+  color: #222;
+}
+
+.tooltip_container {
+  position: absolute;
+  bottom: 4em;
+  left: 12.5%;
+}
+
+.tooltip_button {
+  background: #737070;
+  color: whitesmoke;
+}
+
+.parallax_dev_info_container {
+  display: flex;
 }
 
 .parallax_container > div > div {
@@ -10,11 +43,11 @@
 }
 
 .text {
-  pointer-events: none;
+  /* pointer-events: none; */
   justify-content: start !important;
-  font-family: 'Kanit', sans-serif;
+  font-family: rejova;
   line-height: 0px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .number {
@@ -33,7 +66,7 @@
 }
 
 .slopeEnd {
-  clip-path: polygon(70% 0, 100% 0, 80% 100%, 50% 100%);
+  clip-path: polygon(85% 0, 100% 0, 80% 100%, 50% 100%);
 }
 
 .slopeBegin,
@@ -44,14 +77,6 @@
   cursor: pointer;
 }
 
-.pink {
-  background: #CACACA;
-}
-
-.teal {
-  background: #CACACA;
-}
-
-.tomato {
+.grey {
   background: #CACACA;
 }
