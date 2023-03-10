@@ -5,15 +5,15 @@
   font-size: 3rem;
 }
 
+@media screen and (max-width: 415px) {
+  .dev_heading {
+    font-size: 2rem;
+  }
+}
+
 .parallax_container {
   top: 0;
   left: 0;
-}
-
-.parallax_brand_image {
-  height: 200px;
-  width: auto;
-  margin-left: 0.25em;
 }
 
 .parallax_dev_info {
@@ -53,6 +53,13 @@
 .number {
   font-size: 300px;
   color: #9E9C9C;
+
+}
+
+@media screen and (max-width: 415px) {
+  .number {
+    font-size: 175px;
+  }
 }
 
 .number span {
