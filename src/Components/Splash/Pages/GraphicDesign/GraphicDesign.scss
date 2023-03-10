@@ -9,6 +9,10 @@
   .gd-heading {
     margin-top: -1em;
     font-size: 3rem;
+
+    @media screen and (max-width: 415px) {
+      font-size: 2rem;
+    }
   }
 }
 
