@@ -15,7 +15,7 @@ const Photography = props => {
   return (
     <div>
       <h1>Photography</h1>
-      <div className="container">
+      <div className="photography-card-container">
         <div className="card" onClick={() => navigate('/photography/iceland')}>
           <img src="https://res.cloudinary.com/maynardz/image/upload/v1678375005/Photography/6_xdiclb.jpg" />
           <div className="card__head">Iceland</div>

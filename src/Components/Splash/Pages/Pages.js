@@ -82,11 +82,17 @@ const Page = props => {
       <div style={{ display: 'flex', justifyContent: 'center'}}>
         <section id='dev_container' style={
           props.theme === 'light' ? {
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
             height: '100vh',
             width: '100vw',
             background: 'whitesmoke',
             color: '#222'
           } : props.theme === 'dark' ? {
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
             height: '100vh',
             width: '100vw',
             background: '#222',
@@ -100,11 +106,6 @@ const Page = props => {
       <div style={{ display: 'flex', justifyContent: 'center'}}>
         <section id='graphicDesign_container' style={
           props.theme === 'light' ? {
-            // display: 'flex',
-            // justifyContent: 'center',
-            // alignItems: 'center',
-            height: '100vh',
-            width: '100vw',
             boxSizing: 'border-box',
             // margin: 0,
             // textAlign: 'center',
@@ -116,9 +117,9 @@ const Page = props => {
             color: '#222',
             padding: '2em',
           } : props.theme === 'dark' ? {
-            // display: 'flex',
-            // justifyContent: 'center',
-            // alignItems: 'center',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
             height: '100vh',
             width: '100vw',
             boxSizing: 'border-box',

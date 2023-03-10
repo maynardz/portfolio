@@ -25,8 +25,6 @@ h2 {
   width: 85vw;
   box-sizing: border-box;
   margin: 0;
-  background-color: whitesmoke;
-  color: #222;
 }
 
 /* DEV */
@@ -36,19 +34,18 @@ h2 {
   width: 85vw;
   box-sizing: border-box;
   margin: 0;
-  background-color: #222;
-  color: #fff;
 }
 
 /* GRAPHIC DESIGN */
 #graphicDesign_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   height: 100vh;
   width: 85vw;
   box-sizing: border-box;
   margin: 0;
-  background-color: #222;
-  color: #fff;
 }
 
 /* PHOTOGRAPHY */
@@ -58,6 +55,4 @@ h2 {
   width: 85vw;
   box-sizing: border-box;
   margin: 0;
-  background-color: #222;
-  color: #fff;
 }
