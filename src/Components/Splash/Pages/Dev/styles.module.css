@@ -14,11 +14,17 @@
 .parallax_container {
   top: 0;
   left: 0;
+  scroll-snap-type: x mandatory;
 }
 
 .parallax_dev_info {
   font-size: 1.4rem;
-  color: #222;
+  color: #413D3D;
+  transition: transform .2s; /* Animation */
+}
+
+.parallax_dev_info:hover {
+  transform: scale(1.2);
 }
 
 .tooltip_container {
@@ -40,6 +46,7 @@
 
 .parallax_dev_info_container {
   display: flex;
+  scroll-snap-align: left;
 }
 
 .parallax_container > div > div {
@@ -59,7 +66,6 @@
 .number {
   font-size: 300px;
   color: #9E9C9C;
-
 }
 
 @media screen and (max-width: 415px) {
@@ -91,5 +97,5 @@
 }
 
 .grey {
-  background: #CACACA;
+  background: #C9C7C7;
 }

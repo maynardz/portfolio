@@ -5,7 +5,11 @@ import styles from './styles.module.css'
 
 import { Tooltip, Button } from "@nextui-org/react";
 
-const Page = ({ offset, gradient, onClick }) => (
+import {
+  useNavigate
+} from "react-router-dom";
+
+const Page = ({ offset, gradient, onClick, navigate }) => ( 
   <>
     <ParallaxLayer offset={offset} speed={0.2} onClick={onClick}>
       <div className={styles.slopeBegin} />
@@ -22,21 +26,21 @@ const Page = ({ offset, gradient, onClick }) => (
             <span>
               0{offset + 1}
             </span>
-            <div className={styles.parallax_dev_info}>DeepSeas</div>
+            <div className={styles.parallax_dev_info} onClick={() => navigate('/dev/deep-seas')}>DeepSeas</div>
           </div>
         ) : offset === 1 ? (
-          <div className={styles.parallax_dev_info_container}> 
+          <div className={styles.parallax_dev_info_container} > 
             <span>
               0{offset + 1}
             </span>
-            <div className={styles.parallax_dev_info}>DeepSeas</div>
+            <div className={styles.parallax_dev_info} onClick={() => navigate('/dev/greene-street')}>Greene Street</div>
           </div>
         ) : offset === 2 ? (
           <div className={styles.parallax_dev_info_container}> 
             <span>
               0{offset + 1}
             </span>
-            <div className={styles.parallax_dev_info}>DeepSeas</div>
+            <div className={styles.parallax_dev_info} onClick={() => navigate('/dev/other')}>Other</div>
           </div>
         ) : <div></div>
       }
@@ -46,6 +50,7 @@ const Page = ({ offset, gradient, onClick }) => (
 
 const Dev = props => {
   const parallax = useRef(null);
+  const navigate = useNavigate();
 
   const [hint, setHint] = React.useState(true);
   const [mobileHint, setMobileHint] = React.useState(false);
@@ -64,7 +69,7 @@ const Dev = props => {
     setTimeout(() => {
       setHint(!hint);
       setMobileHint(!mobileHint);
-    }, 2000)
+    }, 1500)
   }
 
   return (
@@ -73,15 +78,15 @@ const Dev = props => {
       <div className={styles.tooltip_container}>
         <Tooltip content={hint ? "use ← → to navigate" : mobileHint ? 'or scroll if on mobile' : ''}>
           <Button className={styles.tooltip_button} auto ghost>
-            hint
+            <p>?</p>
           </Button>
         </Tooltip>
       </div>
       <div style={{ background: '#dfdfdf' }}>
         <Parallax className={styles.parallax_container} ref={parallax} pages={3} horizontal>
-          <Page offset={0} gradient="grey" onClick={() => scroll(1)} />
-          <Page offset={1} gradient="grey" onClick={() => scroll(2)} />
-          <Page offset={2} gradient="grey" onClick={() => scroll(0)} />
+          <Page offset={0} gradient="grey" onClick={() => scroll(1)} navigate={navigate} />
+          <Page offset={1} gradient="grey" onClick={() => scroll(2)} navigate={navigate} />
+          <Page offset={2} gradient="grey" onClick={() => scroll(0)} navigate={navigate} />
         </Parallax>
       </div>
     </div>
