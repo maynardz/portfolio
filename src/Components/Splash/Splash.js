@@ -39,9 +39,7 @@ const Splash = props => {
         <Grid>
           <Switch
             onChange={() => props.updateLocalStorage(props.theme)}
-            color="whitesmoke"
             checked={props.theme === 'light' ? false : true}
-            shadow
             size="xl"
             iconOn={<box-icon type='solid' name='moon'></box-icon>}
             iconOff={<box-icon name='sun' type='solid' ></box-icon>}

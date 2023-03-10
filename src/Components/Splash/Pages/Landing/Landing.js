@@ -49,7 +49,7 @@ const Landing = props => {
           letterSpacing: "25px"
         })
         .add({
-          scale: 1
+          scale: 0.8
         })
         .add({
           letterSpacing: "10px"
@@ -61,12 +61,6 @@ const Landing = props => {
   return (
     <div style={{marginLeft: '0.6em'}}>
       <div ref={ref}>
-        <div className="animate">
-            ZSM.DEV
-        </div>
-        <div className="animate">
-            DEV.ZSM
-        </div>
         <div className="animate">
             ZSM.DEV
         </div>
