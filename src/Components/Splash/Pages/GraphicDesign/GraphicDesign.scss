@@ -1,7 +1,11 @@
 .gd-container {
   height: 60%;
-  width: 100%;
-  // background-color: pink;
+  width: 70%;
+  
+  @media screen and (max-width: 415px) {
+    width: 95%;
+  }
+
   .gd-heading {
     margin-top: -1em;
     font-size: 3rem;
@@ -13,7 +17,7 @@
   width: 100%;
   display: flex;
   box-shadow: 5px 5px 50px #222;
-  // transform: rotate(0deg) skew(-5deg);
+  border-radius: 5px;
 }
 
 .gd-card-container .gd-card-left {
@@ -23,6 +27,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  // border-radius: 5px 0 0 5px;
+
+  p {
+    -webkit-animation: fadein 2s; 
+    -moz-animation: fadein 2s; 
+    -ms-animation: fadein 2s; 
+    -o-animation: fadein 2s; 
+    animation: fadein 2s;
+
+    @media screen and (max-width: 415px) {
+      font-size: 1rem;
+      padding: 0.5em;
+    }
+  }
 }
 
 .gd-card-container .gd-card-right {
@@ -32,6 +50,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  // border-radius: 0px 5px 5px 0px;
+
+  p {
+    -webkit-animation: fadein 2s; 
+    -moz-animation: fadein 2s; 
+    -ms-animation: fadein 2s; 
+    -o-animation: fadein 2s; 
+    animation: fadein 2s;
+
+    @media screen and (max-width: 415px) {
+      font-size: 1rem;
+      padding: 0.5em;
+    }
+  }
 }
 
 .gd-card-container .gd-card-left:hover {
@@ -39,11 +71,11 @@
   background-size: cover;
   background-position: center center;
 
-  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 1s; /* Firefox < 16 */
-  -ms-animation: fadein 1s; /* Internet Explorer */
-  -o-animation: fadein 1s; /* Opera < 12.1 */
-  animation: fadein 1s;
+  -webkit-animation: fadein 2s; 
+  -moz-animation: fadein 2s; 
+  -ms-animation: fadein 2s; 
+  -o-animation: fadein 2s;
+  animation: fadein 2s;
 
   p {
     display: none;
@@ -55,11 +87,11 @@
   background-size: cover;
   background-position: center center;
 
-  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 1s; /* Firefox < 16 */
-  -ms-animation: fadein 1s; /* Internet Explorer */
-  -o-animation: fadein 1s; /* Opera < 12.1 */
-  animation: fadein 1s;
+  -webkit-animation: fadein 2s; 
+  -moz-animation: fadein 2s; 
+  -ms-animation: fadein 2s; 
+  -o-animation: fadein 2s; 
+  animation: fadein 2s;
 
   p {
     display: none;

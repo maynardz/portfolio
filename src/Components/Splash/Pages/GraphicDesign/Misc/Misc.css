@@ -1,0 +1,28 @@
+.misc-photo-container {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2em;
+}
+  
+.img-container {
+  height: auto;
+  width: auto;
+  margin: 0.25em;
+}
+  
+.img {
+  height: 300px;
+  width: auto;
+}
+
+@media screen and (max-width: 475px) {
+  .img {
+    width: 100%;
+    height: auto;
+  }
+}
