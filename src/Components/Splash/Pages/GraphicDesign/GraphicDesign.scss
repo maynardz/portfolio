@@ -1,0 +1,72 @@
+.gd-container {
+  height: 60%;
+  width: 100%;
+  // background-color: pink;
+  .gd-heading {
+    margin-top: -2em;
+    font-size: 3rem;
+  }
+}
+
+.gd-card-container {
+  height: 88.5%;
+  width: 100%;
+  display: flex;
+  box-shadow: 5px 5px 50px #222;
+  // transform: rotate(0deg) skew(-5deg);
+}
+
+.gd-card-container .gd-card-left {
+  width: 100%;
+  height: 100%;
+  background-color: #5E5F5F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gd-card-container .gd-card-right {
+  width: 100%;
+  height: 100%;
+  background-color: #CACACA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gd-card-container .gd-card-left:hover {
+  background-image: url('https://res.cloudinary.com/maynardz/image/upload/v1678411376/Photography/IMG_0999_gog8xa.jpg');
+  background-size: cover;
+  background-position: center center;
+
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
+
+  p {
+    display: none;
+  }
+}
+
+.gd-card-container .gd-card-right:hover {
+  background-image: url('https://res.cloudinary.com/maynardz/image/upload/v1678411374/Photography/IMG_4203_xcbmn9.jpg');
+  background-size: cover;
+  background-position: center center;
+
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
+
+  p {
+    display: none;
+  }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

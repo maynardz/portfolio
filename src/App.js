@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 
 import Splash from './Components/Splash/Splash';
+import AlleyCats from './Components/Splash/Pages/GraphicDesign/AlleyCats/AlleyCats'
+import Misc from './Components/Splash/Pages/GraphicDesign/Misc/Misc'
 import Iceland from './Components/Splash/Pages/Photography/Iceland/Iceland';
 import Amsterdam from './Components/Splash/Pages/Photography/Amsterdam/Amsterdam';
 import PuertoRico from './Components/Splash/Pages/Photography/PuertoRico/PuertoRico';
@@ -47,6 +49,8 @@ function App() {
             setPageNum={setPageNum}
           />
         } />
+        <Route path='graphic-design/indianapolis-alleycats' element={<AlleyCats theme={theme} />} />
+        <Route path='graphic-design/misc' element={<Misc theme={theme} />} />
         <Route path='photography/iceland' element={<Iceland theme={theme} />} />
         <Route path='photography/amsterdam' element={<Amsterdam theme={theme} />} />
         <Route path='photography/puerto-rico' element={<PuertoRico theme={theme} />} />

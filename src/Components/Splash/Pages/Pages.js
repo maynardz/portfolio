@@ -117,7 +117,7 @@ const Page = props => {
             color: 'whitesmoke'
           } : {}
         }>
-          <GraphicDesign />
+          <GraphicDesign theme={props.theme} />
         </section>
       </div>
     ) : props.id === 5 ? (
