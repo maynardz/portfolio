@@ -14,18 +14,26 @@ import {
 function App() {  
 
   const [theme, setTheme] = React.useState('light');
+  const [pageNum, setPageNum] = React.useState(1);
 
   React.useEffect(() => {
     document.body.className = theme;
+
+    if (localStorage.getItem('theme')) {
+      setTheme(localStorage.getItem('theme'));
+    }
   }, [theme]);
 
-  const toggleTheme = () => {
+  const updateLocalStorage = (theme) => {
+    console.log(theme);
     if (theme === 'light') {
+      localStorage.setItem('theme', 'dark');
       setTheme('dark');
     } else {
+      localStorage.setItem('theme', 'light');
       setTheme('light');
     }
-  };
+  }
 
   return (
     <div id="App" className={`App ${theme}`}>
@@ -34,7 +42,9 @@ function App() {
           <Splash
             theme={theme}
             setTheme={setTheme}
-            toggleTheme={toggleTheme}
+            updateLocalStorage={updateLocalStorage}
+            pageNum={pageNum}
+            setPageNum={setPageNum}
           />
         } />
         <Route path='photography/iceland' element={<Iceland theme={theme} />} />

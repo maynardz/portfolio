@@ -9,23 +9,14 @@ import Photography from './Photography/Photography';
 import Landing from './Landing/Landing';
 
 const Page = props => {
-  
-  const updatePageNumber = () => {
-
-  }
 
   return (
     props.id === 1 ? (
       <div style={{ display: 'flex', justifyContent: 'center'}}>
         <section id="splash_container" style={
           props.theme === 'light' ? {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
             height: '100vh',
             width: '100vw',
-            boxSizing: 'border-box',
-            margin: 0,
             textAlign: 'center',
             lineHeight: 1.2,
             fontWeight: 400,
@@ -34,13 +25,8 @@ const Page = props => {
             backgroundColor: 'whitesmoke',
             color: '#222'
           } : props.theme === 'dark' ? {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
             height: '100vh',
             width: '100vw',
-            boxSizing: 'border-box',
-            margin: 0,
             textAlign: 'center',
             lineHeight: 1.2,
             fontWeight: 400,
@@ -50,7 +36,7 @@ const Page = props => {
             color: 'whitesmoke'
           } : {} 
         }>
-          <Landing />
+          <Landing setPageNum={props.setPageNum} />
         </section>
       </div>
     ) : props.id === 2 ? (
@@ -88,7 +74,7 @@ const Page = props => {
             color: 'whitesmoke'
           } : {}
         }>
-          <About />
+          <About setPageNum={props.setPageNum} />
         </section>
         {/* <motion.h2 style={{ y }}>{`#00${props.id}`}</motion.h2> */}
       </div>
@@ -96,38 +82,16 @@ const Page = props => {
       <div style={{ display: 'flex', justifyContent: 'center'}}>
         <section id='dev_container' style={
           props.theme === 'light' ? {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
             height: '100vh',
             width: '100vw',
-            boxSizing: 'border-box',
-            // margin: 0,
-            // textAlign: 'center',
-            // lineHeight: 1.2,
-            // fontWeight: 400,
-            // fontFamily: 'rejova',
-            // fontSize: '2rem',
-            // backgroundColor: 'whitesmoke',
             color: '#222'
           } : props.theme === 'dark' ? {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
             height: '100vh',
             width: '100vw',
-            boxSizing: 'border-box',
-            // margin: 0,
-            // textAlign: 'center',
-            // lineHeight: 1.2,
-            // fontWeight: 400,
-            // fontFamily: 'rejova',
-            // fontSize: '2rem',
-            // backgroundColor: '#222',
             color: 'whitesmoke'
           } : {}
         }>
-          <Dev theme={props.theme} />
+          <Dev theme={props.theme} setPageNum={props.setPageNum} />
         </section>
       </div>
     ) : props.id === 4 ? (
@@ -165,7 +129,7 @@ const Page = props => {
             color: 'whitesmoke'
           } : {}
         }>
-          <GraphicDesign />
+          <GraphicDesign setPageNum={props.setPageNum} />
         </section>
       </div>
     ) : props.id === 5 ? (
@@ -197,7 +161,7 @@ const Page = props => {
             color: 'whitesmoke'
           } : {}
         }>
-          <Photography />
+          <Photography setPageNum={props.setPageNum} />
         </section>
       </div>
     ) : props.id === 6 ? (
@@ -231,7 +195,7 @@ const Page = props => {
             fontSize: '2rem',
           } : {}
         }>
-          <Contact />
+          <Contact setPageNum={props.setPageNum} />
         </section>
       </div>
     ) : <div></div>

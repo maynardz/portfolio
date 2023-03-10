@@ -1,4 +1,5 @@
 import React from 'react';
+import './Landing.css';
 
 import { useRef } from 'react';
 
@@ -8,7 +9,6 @@ import Letterize from "letterizejs/lib/letterize.js";
 import {
   useScroll,
   useTransform,
-  animateValue
 } from "framer-motion";
 
 function useParallax(value, distance) {
@@ -59,7 +59,7 @@ const Landing = props => {
   }, [targets]);
 
   return (
-    <div>
+    <div style={{marginLeft: '0.6em'}}>
       <div ref={ref}>
         <div className="animate">
             ZSM.DEV
@@ -104,7 +104,7 @@ const Landing = props => {
             DEV.ZSM
         </div>
       </div>
-      {/* <motion.h2 style={{ y }}>{`#00${props.id}`}</motion.h2> */}
+      {/* <motion.h6 style={{ y }}>{`#001`}</motion.h6> */}
     </div>
   )
 };

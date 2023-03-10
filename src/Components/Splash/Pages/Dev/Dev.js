@@ -19,7 +19,7 @@ const Page = ({ offset, gradient, onClick }) => (
 )
 
 const Dev = props => {
-  console.log(props);
+  // console.log(props);
   const parallax = React.useRef(null)
 
   const scroll = (to) => {

@@ -24,8 +24,8 @@ const Splash = props => {
     <div>
       <>
         {
-          [1, 2, 3, 4, 5, 6].map((page, index) => (
-            <Pages key={index} id={page} theme={props.theme} />
+          [1, 2, 3, 4, 5, 6].map((page, index) => ( 
+            <Pages key={index} id={page} theme={props.theme} setPageNum={props.setPageNum} />
           ))
         }
         <motion.div className="progress" style={ props.theme === 'light' ? {scaleX, position: 'fixed', left: 0, right: 0, height: '5px', background: '#222', bottom: '100px'} : props.theme === 'dark' ? {scaleX, position: 'fixed', left: 0, right: 0, height: '5px', background: 'whitesmoke', bottom: '100px'} : {} } />
@@ -38,9 +38,9 @@ const Splash = props => {
         {/* <button onClick={toggleTheme}>Toggle Theme</button> */}
         <Grid>
           <Switch
-            onChange={props.toggleTheme}
+            onChange={() => props.updateLocalStorage(props.theme)}
             color="whitesmoke"
-            checked={false}
+            checked={props.theme === 'light' ? false : true}
             shadow
             size="xl"
             iconOn={<box-icon type='solid' name='moon'></box-icon>}
@@ -49,7 +49,7 @@ const Splash = props => {
         </Grid>
 
         <button>
-          <p>{0}</p>
+          <p>00.{props.pageNum}</p>
         </button>
         
       </footer>
