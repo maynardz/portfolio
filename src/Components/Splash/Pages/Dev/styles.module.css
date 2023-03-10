@@ -32,7 +32,7 @@
   color: #222 !important;
 }
 
-.tooltip_button:hover {
+.tooltip_button, .nextui-button--hovered:hover {
   background-color: #737070 !important;
   border-color: none !important;
   color: whitesmoke !important;
