@@ -25,15 +25,24 @@ h2 {
   width: 85vw;
   box-sizing: border-box;
   margin: 0;
+  background-color: whitesmoke;
+  color: #222;
 }
 
 /* DEV */
 #dev_container {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 85vw;
   box-sizing: border-box;
   margin: 0;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: rejova;
+  font-size: 2rem;
 }
 
 /* GRAPHIC DESIGN */
@@ -41,18 +50,45 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   height: 100vh;
   width: 85vw;
   box-sizing: border-box;
   margin: 0;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: rejova;
+  font-size: 2rem;
 }
 
 /* PHOTOGRAPHY */
 #photography_container {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 85vw;
   box-sizing: border-box;
   margin: 0;
+  text-align: center;
+  /* line-height: 1.2; */
+  /* font-weight: 400; */
+  font-family: rejova;
+  /* font-size: 2rem; */
+}
+
+/* CONTACT */
+#contact_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 85vw;
+  box-sizing: border-box;
+  margin: 0;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: rejova;
+  font-size: 2rem;
 }

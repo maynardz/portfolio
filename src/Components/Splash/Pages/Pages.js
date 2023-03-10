@@ -9,14 +9,23 @@ import Photography from './Photography/Photography';
 import Landing from './Landing/Landing';
 
 const Page = props => {
+  
+  const updatePageNumber = () => {
+
+  }
 
   return (
     props.id === 1 ? (
       <div style={{ display: 'flex', justifyContent: 'center'}}>
         <section id="splash_container" style={
           props.theme === 'light' ? {
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
             height: '100vh',
             width: '100vw',
+            boxSizing: 'border-box',
+            margin: 0,
             textAlign: 'center',
             lineHeight: 1.2,
             fontWeight: 400,
@@ -25,8 +34,13 @@ const Page = props => {
             backgroundColor: 'whitesmoke',
             color: '#222'
           } : props.theme === 'dark' ? {
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
             height: '100vh',
             width: '100vw',
+            boxSizing: 'border-box',
+            margin: 0,
             textAlign: 'center',
             lineHeight: 1.2,
             fontWeight: 400,
@@ -36,7 +50,7 @@ const Page = props => {
             color: 'whitesmoke'
           } : {} 
         }>
-          <Landing setPageNum={props.setPageNum} />
+          <Landing />
         </section>
       </div>
     ) : props.id === 2 ? (
@@ -82,86 +96,37 @@ const Page = props => {
       <div style={{ display: 'flex', justifyContent: 'center'}}>
         <section id='dev_container' style={
           props.theme === 'light' ? {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '100vh',
-            width: '100vw',
-            background: 'whitesmoke',
+            backgroundColor: 'whitesmoke',
             color: '#222'
           } : props.theme === 'dark' ? {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '100vh',
-            width: '100vw',
-            background: '#222',
+            backgroundColor: '#222',
             color: 'whitesmoke'
           } : {}
         }>
-          <Dev theme={props.theme} />
+          <Dev />
         </section>
       </div>
     ) : props.id === 4 ? (
       <div style={{ display: 'flex', justifyContent: 'center'}}>
         <section id='graphicDesign_container' style={
           props.theme === 'light' ? {
-            boxSizing: 'border-box',
-            // margin: 0,
-            // textAlign: 'center',
-            // lineHeight: 1.2,
-            // fontWeight: 400,
-            // fontFamily: 'rejova',
-            // fontSize: '2rem',
             backgroundColor: 'whitesmoke',
-            color: '#222',
-            padding: '2em',
+            color: '#222'
           } : props.theme === 'dark' ? {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '100vh',
-            width: '100vw',
-            boxSizing: 'border-box',
-            // margin: 0,
-            // textAlign: 'center',
-            // lineHeight: 1.2,
-            // fontWeight: 400,
-            // fontFamily: 'rejova',
-            // fontSize: '2rem',
             backgroundColor: '#222',
-            color: 'whitesmoke',
-            padding: '2em'
+            color: 'whitesmoke'
           } : {}
         }>
-          <GraphicDesign theme={props.theme} />
+          <GraphicDesign />
         </section>
       </div>
     ) : props.id === 5 ? (
       <div style={{ display: 'flex', justifyContent: 'center'}}>
         <section id='photography_container' style={
           props.theme === 'light' ? {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '100vh',
-            width: '100vw',
-            boxSizing: 'border-box',
-            margin: 0,
-            textAlign: 'center',
-            fontFamily: 'rejova',
             backgroundColor: 'whitesmoke',
             color: '#222'
           } : props.theme === 'dark' ? {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '100vh',
-            width: '100vw',
-            boxSizing: 'border-box',
-            margin: 0,
-            textAlign: 'center',
-            fontFamily: 'rejova',
             backgroundColor: '#222',
             color: 'whitesmoke'
           } : {}
@@ -173,31 +138,11 @@ const Page = props => {
       <div style={{ display: 'flex', justifyContent: 'center'}}>
         <section id='contact_container' style={
           props.theme === 'light' ? {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '100vh',
-            width: '100vw',
-            boxSizing: 'border-box',
-            margin: 0,
-            textAlign: 'center',
-            fontFamily: 'rejova',
             backgroundColor: 'whitesmoke',
-            color: '#222',
-            fontSize: '2rem',
+            color: '#222'
           } : props.theme === 'dark' ? {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '100vh',
-            width: '100vw',
-            boxSizing: 'border-box',
-            margin: 0,
-            textAlign: 'center',
-            fontFamily: 'rejova',
             backgroundColor: '#222',
-            color: 'whitesmoke',
-            fontSize: '2rem',
+            color: 'whitesmoke'
           } : {}
         }>
           <Contact />

@@ -45,7 +45,7 @@ footer::before {
   left: 0;
   right: 0;
   height: 1px;
-  background: whitesmoke;
+  background: #9E9C9C;
   opacity: 0.6;
 }
 
