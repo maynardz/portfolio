@@ -4,6 +4,12 @@
   height: 100%;
 }
 
+@media screen and (max-width: 1070px) {
+  .list {
+    width: 95%;
+  }
+}
+
 .list > div {
   position: absolute;
   will-change: transform, width, height, opacity;
