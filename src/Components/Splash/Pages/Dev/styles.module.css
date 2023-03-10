@@ -1,6 +1,6 @@
 .dev_heading {
   position: absolute;
-  top: 0;
+  top: 1.25em;
   left: 12.5%;
   font-size: 3rem;
 }
@@ -28,8 +28,14 @@
 }
 
 .tooltip_button {
-  background: #737070;
-  color: whitesmoke;
+  border-color: #737070 !important;
+  color: #222 !important;
+}
+
+.tooltip_button:hover {
+  background-color: #737070 !important;
+  border-color: none !important;
+  color: whitesmoke !important;
 }
 
 .parallax_dev_info_container {

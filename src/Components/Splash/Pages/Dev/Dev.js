@@ -72,7 +72,7 @@ const Dev = props => {
       <p className={styles.dev_heading}>Dev</p>
       <div className={styles.tooltip_container}>
         <Tooltip content={hint ? "use ← → to navigate" : mobileHint ? 'or scroll if on mobile' : ''}>
-          <Button className={styles.tooltip_button} auto flat>
+          <Button className={styles.tooltip_button} auto ghost>
             hint
           </Button>
         </Tooltip>
