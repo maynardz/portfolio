@@ -74,7 +74,7 @@ const Page = props => {
             color: 'whitesmoke'
           } : {}
         }>
-          <About setPageNum={props.setPageNum} />
+          <About />
         </section>
         {/* <motion.h2 style={{ y }}>{`#00${props.id}`}</motion.h2> */}
       </div>
@@ -84,52 +84,56 @@ const Page = props => {
           props.theme === 'light' ? {
             height: '100vh',
             width: '100vw',
+            background: 'whitesmoke',
             color: '#222'
           } : props.theme === 'dark' ? {
             height: '100vh',
             width: '100vw',
+            background: '#222',
             color: 'whitesmoke'
           } : {}
         }>
-          <Dev theme={props.theme} setPageNum={props.setPageNum} />
+          <Dev theme={props.theme} />
         </section>
       </div>
     ) : props.id === 4 ? (
       <div style={{ display: 'flex', justifyContent: 'center'}}>
         <section id='graphicDesign_container' style={
           props.theme === 'light' ? {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
+            // display: 'flex',
+            // justifyContent: 'center',
+            // alignItems: 'center',
             height: '100vh',
             width: '100vw',
             boxSizing: 'border-box',
-            margin: 0,
-            textAlign: 'center',
-            lineHeight: 1.2,
-            fontWeight: 400,
-            fontFamily: 'rejova',
-            fontSize: '2rem',
+            // margin: 0,
+            // textAlign: 'center',
+            // lineHeight: 1.2,
+            // fontWeight: 400,
+            // fontFamily: 'rejova',
+            // fontSize: '2rem',
             backgroundColor: 'whitesmoke',
-            color: '#222'
+            color: '#222',
+            padding: '2em',
           } : props.theme === 'dark' ? {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
+            // display: 'flex',
+            // justifyContent: 'center',
+            // alignItems: 'center',
             height: '100vh',
             width: '100vw',
             boxSizing: 'border-box',
-            margin: 0,
-            textAlign: 'center',
-            lineHeight: 1.2,
-            fontWeight: 400,
-            fontFamily: 'rejova',
-            fontSize: '2rem',
+            // margin: 0,
+            // textAlign: 'center',
+            // lineHeight: 1.2,
+            // fontWeight: 400,
+            // fontFamily: 'rejova',
+            // fontSize: '2rem',
             backgroundColor: '#222',
-            color: 'whitesmoke'
+            color: 'whitesmoke',
+            padding: '2em'
           } : {}
         }>
-          <GraphicDesign setPageNum={props.setPageNum} />
+          <GraphicDesign theme={props.theme} />
         </section>
       </div>
     ) : props.id === 5 ? (
@@ -161,7 +165,7 @@ const Page = props => {
             color: 'whitesmoke'
           } : {}
         }>
-          <Photography setPageNum={props.setPageNum} />
+          <Photography />
         </section>
       </div>
     ) : props.id === 6 ? (
@@ -195,7 +199,7 @@ const Page = props => {
             fontSize: '2rem',
           } : {}
         }>
-          <Contact setPageNum={props.setPageNum} />
+          <Contact />
         </section>
       </div>
     ) : <div></div>
