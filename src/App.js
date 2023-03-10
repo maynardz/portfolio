@@ -61,7 +61,6 @@ function App() {
         <Route path='photography/amsterdam' element={<Amsterdam theme={theme} />} />
         <Route path='photography/puerto-rico' element={<PuertoRico theme={theme} />} />
       </Routes>
-      {/* <Splash theme={theme} setTheme={setTheme} toggleTheme={toggleTheme} /> */}
     </div>
   );
 }
