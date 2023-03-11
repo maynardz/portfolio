@@ -34,6 +34,13 @@
   padding-right: 2em;
 }
 
+@media screen and (max-width: 435px) {
+  .about {
+    padding-right: 0.5em;
+    font-size: 1rem;
+  }
+}
+
 .blurb {
   text-align: right;
   /* font-family:  */

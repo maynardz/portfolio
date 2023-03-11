@@ -61,22 +61,11 @@ const Dev = props => {
     }
   };
 
-  React.useEffect(() => {
-    updateHint();
-  }, [hint]);
-  
-  const updateHint = () => {
-    setTimeout(() => {
-      setHint(!hint);
-      setMobileHint(!mobileHint);
-    }, 1500)
-  }
-
   return (
     <div style={props.theme === 'light' ? {background: 'whitesmoke'} : props.theme === 'dark' ? {background: '#222'} : {} }>
       <p className={styles.dev_heading}>Development</p>
       <div className={styles.tooltip_container}>
-        <Tooltip content={hint ? "use ← → to navigate" : mobileHint ? 'or scroll if on mobile' : ''}>
+        <Tooltip content="click to navigate">
           <Button className={styles.tooltip_button} auto ghost>
             <p>?</p>
           </Button>
