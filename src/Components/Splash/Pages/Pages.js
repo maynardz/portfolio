@@ -88,7 +88,7 @@ const Page = props => {
             color: 'whitesmoke'
           } : {}
         }>
-          <About />
+          <About theme={props.theme} />
         </section>
         {/* <motion.h2 style={{ y }}>{`#00${props.id}`}</motion.h2> */}
       </div>

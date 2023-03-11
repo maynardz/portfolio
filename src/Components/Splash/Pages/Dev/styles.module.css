@@ -5,7 +5,7 @@
   font-size: 3rem;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 435px) {
   .dev_heading {
     font-size: 2rem;
   }
@@ -14,13 +14,13 @@
 .parallax_container {
   top: 0;
   left: 0;
-  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
 .parallax_dev_info {
   font-size: 1.4rem;
   color: #413D3D;
-  transition: transform .2s; /* Animation */
+  transition: transform .2s;
 }
 
 .parallax_dev_info:hover {
@@ -46,7 +46,6 @@
 
 .parallax_dev_info_container {
   display: flex;
-  scroll-snap-align: left;
 }
 
 .parallax_container > div > div {
@@ -66,9 +65,11 @@
 .number {
   font-size: 300px;
   color: #9E9C9C;
+  position: absolute;
+  left: 12.5%;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 435px) {
   .number {
     font-size: 175px;
   }
@@ -80,12 +81,11 @@
 }
 
 .slopeBegin {
-  /* background-color: #20232f; */
   clip-path: polygon(20% 0, 70% 0, 50% 100%, 0% 100%);
 }
 
 .slopeEnd {
-  clip-path: polygon(85% 0, 100% 0, 80% 100%, 50% 100%);
+  clip-path: polygon(70% 0, 100% 0, 80% 100%, 50% 100%);
 }
 
 .slopeBegin,

@@ -1,0 +1,50 @@
+.about-heading {
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 435px) {
+  .about-heading {
+    font-size: 2rem;
+  }
+}
+
+.about-info-container {
+  display: flex;
+  height: 60vh;
+  width: 100vw;
+}
+
+.about-img-container {
+  background-image: url('https://res.cloudinary.com/maynardz/image/upload/v1678507832/Photography/IMG-0286_olly6i.jpg');
+  background-size: cover;
+  background-position: center center;
+  filter: grayscale(100%);
+  height: 100%;
+  width: 30%;
+}
+
+.about-img-container:hover {
+  filter: grayscale(0%);
+}
+
+.about {
+  height: 100%;
+  width: 70%;
+  font-size: 1.2rem;
+  padding-right: 2em;
+}
+
+.blurb {
+  text-align: right;
+  /* font-family:  */
+}
+
+.skills-icons {
+  display: flex;
+  justify-content: center; 
+  height: 55%;
+  flex-direction: column;
+  position: absolute;
+  padding: 0.25em;
+  text-align: center;
+}

@@ -46,9 +46,9 @@ const Splash = props => {
           />
         </Grid>
 
-        <button>
+        {/* <button>
           <p>00.{props.pageNum}</p>
-        </button>
+        </button> */}
         
       </footer>
     </div>

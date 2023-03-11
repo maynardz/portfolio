@@ -1,0 +1,8 @@
+span {
+  display: inline-block;
+}
+
+.animate {
+  letter-spacing: 10px;
+  font-size: 1.6rem;
+}

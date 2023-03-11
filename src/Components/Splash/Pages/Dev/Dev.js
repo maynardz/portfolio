@@ -64,7 +64,7 @@ const Dev = props => {
   React.useEffect(() => {
     updateHint();
   }, [hint]);
-
+  
   const updateHint = () => {
     setTimeout(() => {
       setHint(!hint);

@@ -49,7 +49,7 @@ const Landing = props => {
           letterSpacing: "25px"
         })
         .add({
-          scale: 0.8
+          scale: 1
         })
         .add({
           letterSpacing: "10px"
