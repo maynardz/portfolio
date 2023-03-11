@@ -4,6 +4,14 @@ import './About.css';
 const About = props => {
   console.log(props);
 
+  const [name, setName] = React.useState('Zach');
+
+  React.useEffect(() => {
+    setTimeout(() => {
+      name === 'Zach' ? setName('ザック') : setName('Zach');
+    }, 5000)
+  }, [name]);
+
   return (
     <div>
       <div>
@@ -13,7 +21,10 @@ const About = props => {
         <div className='about-img-container'></div>
         <div className='about'>
           <div className='blurb'>
-            Hi, my name is Zach.
+            <p className='blurb-heading'>Hi, my name is <span>{name}</span>.</p>
+            <br/>
+            <p className='blurb-body'>I'm a front-end web designer/developer & graphic artist based in Indianapolis, IN.</p>
+            <p className='blurb-body'>Out of the office you'll find me spending time with my wife & our 3 dogs, weightlifitng, cooking, traveling, or playing disc golf.</p>
           </div>
           <div className='skills-container'>
             <div className='skills-icons'>

@@ -43,15 +43,31 @@
 
 .blurb {
   text-align: right;
-  /* font-family:  */
+  width: 200px;
+  float: right;
+  /* margin-top: 7.5em; */
+}
+
+.blurb-heading {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.blurb-body {
+  font-size: 1rem;
+}
+
+.skills-container {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
 }
 
 .skills-icons {
   display: flex;
-  justify-content: center; 
-  height: 55%;
   flex-direction: column;
   position: absolute;
   padding: 0.25em;
   text-align: center;
+  margin-top: -0.25em;
 }
