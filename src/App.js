@@ -30,7 +30,7 @@ function App() {
   }, [theme]);
 
   const updateLocalStorage = (theme) => {
-    console.log(theme);
+    // console.log(theme);
     if (theme === 'light') {
       localStorage.setItem('theme', 'dark');
       setTheme('dark');

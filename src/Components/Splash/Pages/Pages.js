@@ -103,7 +103,7 @@ const Page = props => {
             color: 'whitesmoke'
           } : {}
         }>
-          <Dev />
+          <Dev theme={props.theme} />
         </section>
       </div>
     ) : props.id === 4 ? (
@@ -131,7 +131,7 @@ const Page = props => {
             color: 'whitesmoke'
           } : {}
         }>
-          <Photography />
+          <Photography theme={props.theme} />
         </section>
       </div>
     ) : props.id === 6 ? (
@@ -145,7 +145,7 @@ const Page = props => {
             color: 'whitesmoke'
           } : {}
         }>
-          <Contact />
+          <Contact theme={props.theme} />
         </section>
       </div>
     ) : <div></div>

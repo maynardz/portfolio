@@ -52,9 +52,6 @@ const Dev = props => {
   const parallax = useRef(null);
   const navigate = useNavigate();
 
-  const [hint, setHint] = React.useState(true);
-  const [mobileHint, setMobileHint] = React.useState(false);
-
   const scroll = (to) => {
     if (parallax.current) {
       parallax.current.scrollTo(to)
@@ -65,7 +62,7 @@ const Dev = props => {
     <div style={props.theme === 'light' ? {background: 'whitesmoke'} : props.theme === 'dark' ? {background: '#222'} : {} }>
       <p className={styles.dev_heading}>Development</p>
       <div className={styles.tooltip_container}>
-        <Tooltip content="click to navigate">
+        <Tooltip content="click anywhere to navigate">
           <Button className={styles.tooltip_button} auto ghost>
             <p>?</p>
           </Button>
