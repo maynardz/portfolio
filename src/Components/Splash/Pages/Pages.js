@@ -9,43 +9,17 @@ import Photography from './Photography/Photography';
 import Landing from './Landing/Landing';
 
 const Page = props => {
-  
-  const updatePageNumber = () => {
-
-  }
 
   return (
     props.id === 1 ? (
       <div style={{ display: 'flex', justifyContent: 'center'}}>
         <section id="splash_container" style={
           props.theme === 'light' ? {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '100vh',
-            width: '100vw',
-            boxSizing: 'border-box',
-            margin: 0,
             textAlign: 'center',
-            lineHeight: 1.2,
-            fontWeight: 400,
-            fontFamily: 'rejova',
-            fontSize: '2rem',
             backgroundColor: 'whitesmoke',
             color: '#222'
           } : props.theme === 'dark' ? {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '100vh',
-            width: '100vw',
-            boxSizing: 'border-box',
-            margin: 0,
             textAlign: 'center',
-            lineHeight: 1.2,
-            fontWeight: 400,
-            fontFamily: 'rejova',
-            fontSize: '2rem',
             backgroundColor: '#222',
             color: 'whitesmoke'
           } : {} 
@@ -57,33 +31,10 @@ const Page = props => {
       <div style={{ display: 'flex', justifyContent: 'center'}}>
         <section id='about_container' style={
           props.theme === 'light' ? {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '100vh',
-            width: '100vw',
-            boxSizing: 'border-box',
-            margin: 0,
-            textAlign: 'center',
-            lineHeight: 1.2,
-            fontWeight: 400,
-            fontFamily: 'rejova',
             fontSize: '2rem',
             backgroundColor: 'whitesmoke',
             color: '#222'
           } : props.theme === 'dark' ? {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '100vh',
-            width: '100vw',
-            boxSizing: 'border-box',
-            margin: 0,
-            textAlign: 'center',
-            lineHeight: 1.2,
-            fontWeight: 400,
-            fontFamily: 'rejova',
-            fontSize: '2rem',
             backgroundColor: '#222',
             color: 'whitesmoke'
           } : {}

@@ -40,7 +40,7 @@ const About = props => {
               <box-icon color={'#737070'} name='graphql' type='logo' ></box-icon>
               <box-icon color={'#737070'} name='git' type='logo' ></box-icon>
               <box-icon color={'#737070'} name='github' type='logo' ></box-icon>
-              <box-icon color={'#737070'} type='logo' name='firebase'></box-icon>
+              <box-icon color={'#737070'} name='firebase' type='logo' ></box-icon>
               <box-icon color={'#737070'} name='heroku' type='logo' ></box-icon>
               <box-icon color={'#737070'} name='figma' type='logo' ></box-icon>
               <box-icon color={'#737070'} name='adobe' type='logo' ></box-icon>            
