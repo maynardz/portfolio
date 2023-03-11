@@ -1,5 +1,6 @@
 .about-heading {
   font-size: 3rem;
+  font-family: rejova;
 }
 
 @media screen and (max-width: 435px) {
@@ -45,12 +46,15 @@
   text-align: right;
   width: 150px;
   float: right;
+  /* font-family: rejova; */
   /* margin-top: 7.5em; */
 }
 
 .blurb-heading {
   font-size: 1.2rem;
   margin: 0;
+  font-family: rejova;
+
   /* text-shadow: 1px 1px 5px whitesmoke ; */
 }
 
