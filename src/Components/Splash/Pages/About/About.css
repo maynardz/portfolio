@@ -43,7 +43,7 @@
 
 .blurb {
   text-align: right;
-  width: 200px;
+  width: 150px;
   float: right;
   /* margin-top: 7.5em; */
 }
@@ -55,6 +55,12 @@
 
 .blurb-body {
   font-size: 1rem;
+}
+
+@media screen and (max-width: 435px) {
+  .blurb-body {
+    font-size: 0.8rem;
+  }
 }
 
 .skills-container {
