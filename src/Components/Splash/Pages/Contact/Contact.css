@@ -1,6 +1,24 @@
+.contact-wrapper {
+  width: 98%;
+}
 
+.contact-heading {
+  font-size: 3rem;
+}
 
-.jyrxxG {
-  border-color: #737070 !important;
-  border-bottom-color: #737070 !important;
+@media screen and (max-width: 750px) {
+  
+}
+
+@media screen and (max-width: 550px) {
+  .contact-heading {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .contact-heading {
+    width: 80%;
+    margin: 0 auto;
+  }
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Contact.css';
 import emailjs from '@emailjs/browser';
 import { Popover, Text } from '@nextui-org/react';
 
@@ -48,8 +49,8 @@ const Contact = props => {
   };
  
   return (
-    <div>
-      <p>Let's make cool stuff</p>
+    <div className='contact-wrapper'>
+      <p className='contact-heading'>Let's make cool stuff</p>
       <Grommet theme={theme}>
         <Box align="center" justify="center" pad="large">
           <Box width="medium">
