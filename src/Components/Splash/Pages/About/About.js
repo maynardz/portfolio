@@ -23,7 +23,7 @@ const About = props => {
           <div className='blurb'>
             <p className='blurb-heading' style={props.theme === 'light' ? {textShadow: '2px 1px 3px #222' } : props.theme === 'dark' ? { textShadow: '2px 1px 3px whitesmoke' } : {} }>Hi, my name is <span>{name}</span>.</p>
             <br/>
-            <p className='blurb-body'>I'm a front-end web developer/designer & graphic artist based in Indianapolis, IN.</p>
+            <p className='blurb-body'>I'm a front-end web developer & graphic artist based in Indianapolis, IN.</p>
             <p className='blurb-body'>Out of the office you'll find me spending time with my wife & our 3 dogs, weightlifitng, cooking, traveling, or playing disc golf - among other things.</p>
           </div>
           <div className='skills-container'>
