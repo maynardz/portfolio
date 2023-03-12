@@ -1,5 +1,12 @@
 body {
   min-height: 100vh;
+  /* scroll-behavior: smooth; */
+  /* overflow: hidden; */
+  background-color: plum;
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
 
 @font-face {

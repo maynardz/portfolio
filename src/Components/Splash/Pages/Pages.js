@@ -12,7 +12,7 @@ const Page = props => {
 
   return (
     props.id === 1 ? (
-      <div style={{ display: 'flex', justifyContent: 'center'}}>
+      <div>
         <section id="splash_container" style={
           props.theme === 'light' ? {
             textAlign: 'center',
@@ -28,7 +28,7 @@ const Page = props => {
         </section>
       </div>
     ) : props.id === 2 ? (
-      <div style={{ display: 'flex', justifyContent: 'center'}}>
+      <div>
         <section id='about_container' style={
           props.theme === 'light' ? {
             fontSize: '2rem',
@@ -44,7 +44,7 @@ const Page = props => {
         {/* <motion.h2 style={{ y }}>{`#00${props.id}`}</motion.h2> */}
       </div>
     ) : props.id === 3 ? (
-      <div style={{ display: 'flex', justifyContent: 'center'}}>
+      <div>
         <section id='dev_container' style={
           props.theme === 'light' ? {
             backgroundColor: 'whitesmoke',
@@ -58,7 +58,7 @@ const Page = props => {
         </section>
       </div>
     ) : props.id === 4 ? (
-      <div style={{ display: 'flex', justifyContent: 'center'}}>
+      <div>
         <section id='graphicDesign_container' style={
           props.theme === 'light' ? {
             backgroundColor: 'whitesmoke',
@@ -72,7 +72,7 @@ const Page = props => {
         </section>
       </div>
     ) : props.id === 5 ? (
-      <div style={{ display: 'flex', justifyContent: 'center'}}>
+      <div>
         <section id='photography_container' style={
           props.theme === 'light' ? {
             backgroundColor: 'whitesmoke',
@@ -86,7 +86,7 @@ const Page = props => {
         </section>
       </div>
     ) : props.id === 6 ? (
-      <div style={{ display: 'flex', justifyContent: 'center'}}>
+      <div>
         <section id='contact_container' style={
           props.theme === 'light' ? {
             backgroundColor: 'whitesmoke',
