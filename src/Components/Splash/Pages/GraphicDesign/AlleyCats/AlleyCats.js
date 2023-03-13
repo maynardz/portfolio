@@ -5,7 +5,7 @@ import { IMAGES } from './IMAGES/Images';
 
 const AlleyCats = props => {
   return (
-    <div style={ props.theme === 'light' ? {backgroundColor: 'whitesmoke', height: 'auto', width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'scroll'} : props.theme === 'dark' ? {backgroundColor: '#222', height: 'auto', width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'scroll'} : {} }>
+    <div style={{ height: 'auto', width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <div className='alleycats-photo-container'>
         {
           IMAGES.map((img, index) => (

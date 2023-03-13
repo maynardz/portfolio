@@ -44,11 +44,30 @@
 
 .blurb {
   text-align: right;
-  width: 150px;
+  width: 300px;
   float: right;
   font-family: rejova;
   /* margin-top: 7.5em; */
 }
+
+@media screen and (max-width: 750px) {
+  .blurb {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .blurb {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .blurb {
+    width: 150px;
+  }  
+}
+
 
 .blurb-heading {
   font-size: 1.2rem;

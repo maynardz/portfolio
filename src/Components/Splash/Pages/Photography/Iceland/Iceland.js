@@ -5,7 +5,7 @@ import { IMAGES } from './IMAGES/Images';
 
 const Iceland = props => {
   return (
-    <div style={{ height: 'auto', width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'scroll'}}>
+    <div style={{ height: 'auto', width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <div className='iceland-photo-container'>
         {
           IMAGES.map((img, index) => (
