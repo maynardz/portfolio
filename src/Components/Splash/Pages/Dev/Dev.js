@@ -59,7 +59,7 @@ const Dev = props => {
   };
 
   return (
-    <div style={props.theme === 'light' ? {background: 'whitesmoke'} : props.theme === 'dark' ? {background: '#222'} : {} }>
+    <div style={props.theme === 'light' ? {background: 'whitesmoke'} : props.theme === 'dark' ? {background: '#222' } : {} }>
       <p className={styles.dev_heading}>Development</p>
       <div className={styles.tooltip_container}>
         <Tooltip content="click anywhere to navigate">

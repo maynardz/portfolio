@@ -89,7 +89,7 @@ const Contact = props => {
                   ]}
                   value={from_name}
                   onChange={(event) => setFromName(event.target.value)}
-                  style={{ fontFamily: 'Arial', fontSize: '1rem' }}
+                  style={{ fontFamily: 'Arial', fontSize: '1rem', background: 'white' }}
                 />
               </FormField>
               <FormField name="value" label="What can I help you with?">
@@ -97,7 +97,7 @@ const Contact = props => {
                   value={message} 
                   name="message" 
                   placeholder="give me some details about your project" 
-                  style={{ fontFamily: 'Arial', fontSize: '1rem' }} 
+                  style={{ fontFamily: 'Arial', fontSize: '1rem', background: 'white' }} 
                   onChange={(event) => setMessage(event.target.value)}
                 />
               </FormField>

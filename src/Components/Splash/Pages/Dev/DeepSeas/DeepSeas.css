@@ -1,0 +1,11 @@
+.deepseas-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+
+.deepseas-heading {
+  font-family: rejova;
+  font-size: 3rem;
+  margin: 0;
+}
