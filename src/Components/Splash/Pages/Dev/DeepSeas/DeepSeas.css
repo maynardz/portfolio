@@ -52,4 +52,9 @@
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 1.5em 0 1.5em;
+}
+
+.video-container button a {
+  text-decoration: none;
 }
