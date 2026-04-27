@@ -9,7 +9,7 @@ import {
   useNavigate
 } from "react-router-dom";
 
-const Page = ({ offset, gradient, onClick, navigate }) => ( 
+const Page = ({ offset, gradient, onClick, navigate }) => (
   <>
     <ParallaxLayer offset={offset} speed={0.2} onClick={onClick}>
       <div className={styles.slopeBegin} />
@@ -22,26 +22,33 @@ const Page = ({ offset, gradient, onClick, navigate }) => (
     <ParallaxLayer className={`${styles.text} ${styles.number} ${styles.parallax_dev_info}`} offset={offset} speed={0.3}>
       {
         offset === 0 ? (
-          <div className={styles.parallax_dev_info_container}> 
+          <div className={styles.parallax_dev_info_container}>
             <span>
               0{offset + 1}
             </span>
-            <div className={styles.parallax_dev_info} onClick={() => navigate('/dev/deep-seas')}>DeepSeas</div>
+            <div className={styles.parallax_dev_info} onClick={() => navigate('/dev/IGD')}>Indy Golf Den</div>
           </div>
         ) : offset === 1 ? (
-          <div className={styles.parallax_dev_info_container} > 
+          <div className={styles.parallax_dev_info_container} >
             <span>
               0{offset + 1}
             </span>
-            <div className={styles.parallax_dev_info} onClick={() => navigate('/dev/greene-street')}>Greene Street</div>
+            <div className={styles.parallax_dev_info} onClick={() => navigate('/dev/carphomes')}>CarpHomes</div>
           </div>
         ) : offset === 2 ? (
-          <div className={styles.parallax_dev_info_container}> 
+          <div className={styles.parallax_dev_info_container}>
             <span>
               0{offset + 1}
             </span>
-            <div className={styles.parallax_dev_info} onClick={() => navigate('/dev/other')}>Other</div>
+            <div className={styles.parallax_dev_info} onClick={() => navigate('/dev/deepseas')}>DeepSeas</div>
           </div>
+        // ) : offset === 3 ? (
+        //   <div className={styles.parallax_dev_info_container}>
+        //     <span>
+        //       0{offset + 1}
+        //     </span>
+        //     <div className={styles.parallax_dev_info} onClick={() => navigate('/dev/other')}>Other</div>
+        //   </div>
         ) : <div></div>
       }
     </ParallaxLayer>
@@ -59,7 +66,7 @@ const Dev = props => {
   };
 
   return (
-    <div className={styles.dev_wrapper} style={props.theme === 'light' ? {background: 'whitesmoke'} : props.theme === 'dark' ? {background: '#222' } : {} }>
+    <div className={styles.dev_wrapper} style={props.theme === 'light' ? { background: 'whitesmoke' } : props.theme === 'dark' ? { background: '#222' } : {}}>
       <p className={styles.dev_heading}>Development</p>
       <div className={styles.tooltip_container}>
         <Tooltip content="click anywhere to navigate">
@@ -73,6 +80,7 @@ const Dev = props => {
           <Page offset={0} gradient="grey" onClick={() => scroll(1)} navigate={navigate} />
           <Page offset={1} gradient="grey" onClick={() => scroll(2)} navigate={navigate} />
           <Page offset={2} gradient="grey" onClick={() => scroll(0)} navigate={navigate} />
+          {/* <Page offset={3} gradient="grey" onClick={() => scroll(0)} navigate={navigate} /> */}
         </Parallax>
       </div>
     </div>

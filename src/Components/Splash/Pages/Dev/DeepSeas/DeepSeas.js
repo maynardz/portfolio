@@ -36,8 +36,14 @@ const DeepSeas = props => {
       </div>
       
       <div className='deepseas-info-container'>
-        <div className='content-container'>
-          <p>Built using the Webflow platform & JavaScript to announce the unification and partnership of Booz Allen Hamilton // Security On-Demand's new commercial Managed Threat Services business, DeepSeas. </p> 
+        <div className='ds-content-container'>
+          <p>Designed and developed a wide range of marketing and content-driven web experiences to support the launch and growth of DeepSeas, a managed cybersecurity services platform backed by Booz Allen Hamilton and Security On-Demand.</p> 
+          <br/>
+          <p>While I initially contributed to the public announcement page for the DeepSeas launch, my role quickly expanded into ongoing collaboration with both engineering and marketing teams. I led and supported the design and implementation of 50+ web pages, focusing on responsive layouts, improved user experience, and brand consistency across the site.</p>
+          <br/>
+          <p>My work included translating design concepts into production-ready front-end code, refining page structure and hierarchy for clarity, and optimizing performance and accessibility. I also partnered closely with designers to ensure visual alignment across landing pages, blog content, and supporting marketing materials.</p>
+          <br/>
+          {/* <p>In addition to development, I contributed to improving the overall maintainability of the site by helping establish reusable components and more scalable styling patterns.</p> */}
         </div>
         {
           loaded ? null : (

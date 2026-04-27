@@ -4,6 +4,8 @@ import './App.css';
 import Splash from './Components/Splash/Splash';
 import DeepSeas from './Components/Splash/Pages/Dev/DeepSeas/DeepSeas';
 import GreeneStreet from './Components/Splash/Pages/Dev/GreeneStreet/GreeneStreet';
+import IGD from './Components/Splash/Pages/Dev/IGD/IGD';
+import CarpHomes from './Components/Splash/Pages/Dev/CarpHomes/CarpHomes';
 import Other from './Components/Splash/Pages/Dev/Other/Other';
 import AlleyCats from './Components/Splash/Pages/GraphicDesign/AlleyCats/AlleyCats'
 import Misc from './Components/Splash/Pages/GraphicDesign/Misc/Misc'
@@ -53,8 +55,10 @@ function App() {
           />
         } />
         <Route path='graphic-design/indianapolis-alleycats' element={<AlleyCats theme={theme} />} />
-        <Route path='dev/deep-seas' element={<DeepSeas theme={theme} />} />
-        <Route path='dev/greene-street' element={<GreeneStreet theme={theme} />} />
+        <Route path='dev/deepseas' element={<DeepSeas theme={theme} />} />
+        <Route path='dev/igd' element={<IGD theme={theme} />} />
+        <Route path='dev/carphomes' element={<CarpHomes theme={theme} />} />
+        {/* <Route path='dev/greene-street' element={<GreeneStreet theme={theme} />} /> */}
         <Route path='dev/other' element={<Other theme={theme} />} />
         <Route path='graphic-design/misc' element={<Misc theme={theme} />} />
         <Route path='photography/iceland' element={<Iceland theme={theme} />} />

@@ -6,11 +6,11 @@ const About = props => {
 
   const [name, setName] = React.useState('Zach');
 
-  React.useEffect(() => {
-    setTimeout(() => {
-      name === 'Zach' ? setName('ザック') : setName('Zach');
-    }, 5000)
-  }, [name]);
+  // React.useEffect(() => {
+  //   setTimeout(() => {
+  //     name === 'Zach' ? setName('ザック') : setName('Zach');
+  //   }, 5000)
+  // }, [name]);
 
   return (
     <div>

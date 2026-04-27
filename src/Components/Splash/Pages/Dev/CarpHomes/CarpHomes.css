@@ -1,4 +1,4 @@
-.deepseas-container {
+.ch-container {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -9,7 +9,7 @@
   margin: 0 auto;
 }
 
-.deepseas-heading {
+.ch-heading {
   font-family: rejova;
   font-size: 3rem;
   margin: 0.5em;
@@ -30,22 +30,22 @@
   margin: 0 0.5em 0 0.5em;
 }
 
-.deepseas-info-container {
+.ch-info-container {
   display: flex;
   flex-direction: column;
   width: auto;
   padding: 2em;
 }
 
-.ds-content-container {
+.content-container {
   width: 100%;
-  /* margin-bottom: 2em; */
+  margin-bottom: 2em;
 }
 
-.ds-content-container p {
+.content-container p {
   width: 50%;
   margin: 0 auto;
-  /* text-align: center; */
+  text-align: center;
 }
 
 .video-container {
