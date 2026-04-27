@@ -3,7 +3,7 @@ import './App.css';
 
 import Splash from './Components/Splash/Splash';
 import DeepSeas from './Components/Splash/Pages/Dev/DeepSeas/DeepSeas';
-import GreeneStreet from './Components/Splash/Pages/Dev/GreeneStreet/GreeneStreet';
+// import GreeneStreet from './Components/Splash/Pages/Dev/GreeneStreet/GreeneStreet';
 import IGD from './Components/Splash/Pages/Dev/IGD/IGD';
 import CarpHomes from './Components/Splash/Pages/Dev/CarpHomes/CarpHomes';
 import Other from './Components/Splash/Pages/Dev/Other/Other';

@@ -4,7 +4,7 @@ import './About.css';
 const About = props => {
   // console.log(props);
 
-  const [name, setName] = React.useState('Zach');
+  // const [name, setName] = React.useState('Zach');
 
   // React.useEffect(() => {
   //   setTimeout(() => {
@@ -21,7 +21,7 @@ const About = props => {
         <div className='about-img-container'></div>
         <div className='about'>
           <div className='blurb'>
-            <p className='blurb-heading' style={props.theme === 'light' ? {textShadow: '2px 1px 3px #222' } : props.theme === 'dark' ? { textShadow: '2px 1px 3px whitesmoke' } : {} }>Hi, my name is <span>{name}</span>.</p>
+            <p className='blurb-heading' style={props.theme === 'light' ? {textShadow: '2px 1px 3px #222' } : props.theme === 'dark' ? { textShadow: '2px 1px 3px whitesmoke' } : {} }>Hi, my name is Zach.</p>
             <br/>
             <p className='blurb-body'>I'm a front-end web developer & graphic artist based in Indianapolis, IN.</p>
             <p className='blurb-body'>Out of the office you'll find me spending time with my wife & our 2 dogs, weightlifitng, cooking, traveling, or playing disc golf - among other things.</p>

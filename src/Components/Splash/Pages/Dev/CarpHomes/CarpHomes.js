@@ -1,7 +1,7 @@
 import React from 'react';
 import './CarpHomes.css';
 
-import webflow_icon from '../../../../../assets/images/webflow_icon.png';
+// import webflow_icon from '../../../../../assets/images/webflow_icon.png';
 import { Spinner } from 'grommet';
 
 const CarpHomes = props => {
@@ -14,7 +14,7 @@ const CarpHomes = props => {
     vid.addEventListener('loadeddata', () => {
       setLoaded(!loaded);
     })
-  }, []);
+  }, [loaded]);
   
   return (
     // <div style={ props.theme === 'light' ? {backgroundColor: 'whitesmoke', height: '100vh', width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center', color: '#222'} : props.theme === 'dark' ? {backgroundColor: '#222', height: '100vh', width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center', color: 'whitesmoke'} : {} }>
@@ -53,7 +53,7 @@ const CarpHomes = props => {
           <video className='video-tag' autoPlay loop muted style={loaded ? {height: '100%', width: '100%'} : { display: 'none' }}>
             <source src={'https://res.cloudinary.com/maynardz/video/upload/v1777053946/ch_demo_sy6uzn.mp4'} type='video/mp4'  />
           </video>
-          <button style={ props.theme === 'light' ? {backgroundColor: '#222', color: 'whitesmoke', fontFamily: 'rejova', border: 'none', padding: '1em'} : props.theme === 'dark' ? {backgroundColor: 'whitesmoke', color: '#222', fontFamily: 'rejova', border: 'none', padding: '1em'} : {} }><a href='https://carphomes.net/' target='_blank' style={ props.theme === 'light' ? {color: 'whitesmoke'} : props.theme === 'dark' ? {color: '#222'} : {} }>Site</a></button>
+          <button style={ props.theme === 'light' ? {backgroundColor: '#222', color: 'whitesmoke', fontFamily: 'rejova', border: 'none', padding: '1em'} : props.theme === 'dark' ? {backgroundColor: 'whitesmoke', color: '#222', fontFamily: 'rejova', border: 'none', padding: '1em'} : {} }><a href='https://carphomes.net/' target='_blank' rel="noreferrer" style={ props.theme === 'light' ? {color: 'whitesmoke'} : props.theme === 'dark' ? {color: '#222'} : {} }>Site</a></button>
         </div>
       </div>
     </div>
