@@ -1,9 +1,9 @@
 import React from 'react';
 import './Photography.scss';
 
-import {
-  motion
-} from "framer-motion";
+// import {
+//   motion
+// } from "framer-motion";
 
 import {
   useNavigate
@@ -17,15 +17,15 @@ const Photography = props => {
       <p className='photography-heading'>Photography</p>
       <div className="photography-card-container">
         <div className="card" onClick={() => navigate('/photography/iceland')}>
-          <img src="https://res.cloudinary.com/maynardz/image/upload/v1678375005/Photography/6_xdiclb.jpg" />
+          <img src="https://res.cloudinary.com/maynardz/image/upload/v1678375005/Photography/6_xdiclb.jpg" alt='iceland cover' />
           <div className="card__head">Iceland</div>
         </div>
         <div className="card" onClick={() => navigate('/photography/amsterdam')}>
-          <img src="https://res.cloudinary.com/maynardz/image/upload/v1678375005/Photography/34_suw19o.jpg" />
+          <img src="https://res.cloudinary.com/maynardz/image/upload/v1678375005/Photography/34_suw19o.jpg" alt='amsterdam cover' />
           <div className="card__head">Amsterdam</div>
         </div>
         <div className="card" onClick={() => navigate('/photography/puerto-rico')}>
-          <img src="https://res.cloudinary.com/maynardz/image/upload/v1678375005/Photography/21_i6vhks.jpg" />
+          <img src="https://res.cloudinary.com/maynardz/image/upload/v1678375005/Photography/21_i6vhks.jpg" alt='pr-cover' />
           <div className="card__head">Puerto Rico</div>
         </div>
       </div>

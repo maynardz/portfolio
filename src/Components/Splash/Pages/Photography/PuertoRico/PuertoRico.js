@@ -10,7 +10,7 @@ const PuertoRico = props => {
         {
           IMAGES.map((img, index) => (
             <div key={index} className='img-container'>
-              <img className='img' src={img.imageSrc} />
+              <img className='img' src={img.imageSrc} alt='zsm-puerto-rico' />
             </div>
           ))
         }

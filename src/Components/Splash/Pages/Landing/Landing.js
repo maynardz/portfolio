@@ -7,18 +7,18 @@ import anime from 'animejs/lib/anime.es.js';
 import Letterize from "letterizejs/lib/letterize.js";
 
 import {
-  useScroll,
-  useTransform,
+  // useScroll,
+  // useTransform,
 } from "framer-motion";
 
-function useParallax(value, distance) {
-  return useTransform(value, [0, 1], [-distance, distance]);
-};
+// function useParallax(value, distance) {
+//   return useTransform(value, [0, 1], [-distance, distance]);
+// };
 
 const Landing = props => {
   const ref = useRef(null);
-  const { scrollYProgress } = useScroll({ target: ref });
-  const y = useParallax(scrollYProgress, 300);
+  // const { scrollYProgress } = useScroll({ target: ref });
+  // const y = useParallax(scrollYProgress, 300);
 
   const targetList = new Letterize({
     targets: ".animate"
